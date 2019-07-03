@@ -23,7 +23,7 @@ function currentLine(array) {
       var name = katzDeliLine[i];
       var line = (`${place}. ${name},`);
       var string = ('The line is currently:');
-      return string + line;
     }
+    return string + line;
   }
 }
