@@ -22,8 +22,8 @@ function currentLine(array) {
     for (var i = 0; i < array.length; i++) {
       var place = i + 1;
       var name = katzDeliLine[i];
-      var line.concat (`${place}. ${name},`);
+      string += (`${place}, ${name}`);
     }
-    return (`${string} + ${line}`);
+    return (string);
   }
 }
