@@ -22,7 +22,7 @@ function currentLine(array) {
     for (var i = 0; i < array.length; i++) {
       var place = i + 1;
       var name = array[i];
-      string += (`${place}. ${name},`);
+      string += (`${place}. ${name}, `);
     }
     return (string);
   }
