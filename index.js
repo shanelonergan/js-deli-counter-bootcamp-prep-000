@@ -18,11 +18,15 @@ function currentLine(array) {
   if (array.length === 0) {
     return 'The line is currently empty.';
   } else {
-    var string = ('The line is currently:');
+    var string = ('The line is currently: ');
     for (var i = 0; i < array.length; i++) {
       var place = i + 1;
       var name = array[i];
-      string += (`${place}. ${name}, `);
+      if (i === array.length - 1) {
+        string += (`${place}. ${name}`);
+      } else {
+        string += (`${place}. ${name}, `);
+      }
     }
     return (string);
   }
